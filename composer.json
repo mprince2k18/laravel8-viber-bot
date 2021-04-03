@@ -1,0 +1,62 @@
+{
+    "name": "mprince/laravel-viber-bot",
+    "description": "Viber bot for Laravel",
+    "keywords": [
+        "paragraf",
+        "viber",
+        "bot",
+        "laravel",
+        "php"
+    ],
+    "homepage": "https://github.com/mprince2k18/laravel-viber-bot",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nemanja Ivankovic",
+            "email": "nemanja.ivankovic@paragraf.rs",
+            "homepage": "https://paragraf.rs",
+            "role": "Developer"
+        },
+        {
+            "name": "Mohammad Prince",
+            "email": "mprince2k16@gmail.com",
+            "homepage": "https://github.com/mprince2k18",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "php-curl-class/php-curl-class": "^9.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.4"
+    },
+    "autoload": {
+        "psr-4":  {
+          "Paragraf\\ViberBot\\": "src"
+        },
+        "files": [
+          "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Paragraf\\ViberBot\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Paragraf\\ViberBot\\ViberBotServiceProvider"
+            ]
+        }
+    }
+}
