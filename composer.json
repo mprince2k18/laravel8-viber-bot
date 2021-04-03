@@ -1,5 +1,5 @@
 {
-    "name": "mprince/laravel-viber-bot",
+    "name": "mprince/laravel8-viber-bot",
     "description": "Viber bot for Laravel",
     "keywords": [
         "paragraf",
@@ -27,7 +27,6 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "ext-json": "*",
         "php-curl-class/php-curl-class": "^9.1"
     },
     "require-dev": {
